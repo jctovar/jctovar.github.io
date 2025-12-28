@@ -1,1 +1,743 @@
-hola mundo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juan Carlos Tovar Gómez - Head of Technological Development Department at FES Iztacala, UNAM. Educational Technology & Learning Management Systems Expert.">
+    <meta name="keywords" content="Juan Carlos Tovar, UNAM, FES Iztacala, Educational Technology, LMS, Distance Learning, ICT">
+    <meta name="author" content="Juan Carlos Tovar Gómez">
+    <title>Juan Carlos Tovar Gómez | Educational Technology Leader</title>
+    
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #c9a961;
+            --gold-light: #d4af37;
+            --text-light: #f1f1f1;
+            --text-dark: #333;
+            --medieval-red: #8b1e3f;
+            --medieval-blue: #2a4494;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        }
+        
+        /* Animated Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--text-light);
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .header-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(201, 169, 97, 0.03) 10px, rgba(201, 169, 97, 0.03) 20px),
+                repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(201, 169, 97, 0.03) 10px, rgba(201, 169, 97, 0.03) 20px);
+            animation: patternMove 20s linear infinite;
+        }
+        
+        @keyframes patternMove {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(20px) translateY(20px); }
+        }
+        
+        .hero {
+            position: relative;
+            z-index: 1;
+            padding: 100px 20px;
+            text-align: center;
+            background: 
+                linear-gradient(rgba(26, 26, 46, 0.85), rgba(22, 33, 62, 0.85)),
+                url('https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-out;
+            color: var(--accent-color);
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5em;
+            color: var(--gold-light);
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.3s both;
+            font-style: italic;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(26, 26, 46, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+        
+        nav li {
+            margin: 0 20px;
+        }
+        
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+            background: rgba(201, 169, 97, 0.1);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        nav a:hover::after {
+            width: 80%;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Sections */
+        section {
+            margin: 60px 0;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent-color), var(--gold-light));
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--accent-color);
+            position: relative;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        }
+        
+        h2::after {
+            content: '❖';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            color: var(--accent-color);
+            font-size: 1.2em;
+        }
+        
+        /* Profile Section */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: start;
+        }
+        
+        .profile-image-container {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .profile-image-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(45deg, transparent 48%, var(--accent-color) 48%, var(--accent-color) 52%, transparent 52%),
+                linear-gradient(-45deg, transparent 48%, var(--accent-color) 48%, var(--accent-color) 52%, transparent 52%);
+            background-size: 20px 20px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .profile-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 8px solid var(--accent-color);
+            border-radius: 10px;
+        }
+        
+        .profile-content p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .skill-card {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: var(--text-light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(201, 169, 97, 0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(201, 169, 97, 0.3);
+        }
+        
+        .skill-card:hover::before {
+            transform: rotate(45deg) scale(1.5);
+        }
+        
+        .skill-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .skill-card p {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--accent-color), var(--gold-light));
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            top: 25px;
+            width: 15px;
+            height: 15px;
+            background: var(--accent-color);
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px var(--accent-color);
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 25px rgba(201, 169, 97, 0.2);
+        }
+        
+        .timeline-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .timeline-date {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, var(--medieval-blue) 0%, var(--primary-color) 100%);
+            color: var(--text-light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '✉';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 120px;
+            opacity: 0.1;
+            transform: rotate(-15deg);
+        }
+        
+        .contact-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(42, 68, 148, 0.4);
+        }
+        
+        .contact-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-card a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+        }
+        
+        .contact-card a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, var(--accent-color), var(--gold-light), var(--accent-color));
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+        
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: var(--gold-light);
+        }
+        
+        /* Decorative Elements */
+        .decorative-icon {
+            display: inline-block;
+            color: var(--accent-color);
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        
+        /* Medieval Border Pattern */
+        .medieval-border {
+            background-image: 
+                repeating-linear-gradient(90deg, transparent, transparent 10px, var(--accent-color) 10px, var(--accent-color) 11px),
+                repeating-linear-gradient(0deg, transparent, transparent 10px, var(--accent-color) 10px, var(--accent-color) 11px);
+            padding: 3px;
+            border-radius: 15px;
+            background-clip: padding-box;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+            
+            .skills-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            h2 {
+                font-size: 2em;
+            }
+        }
+        
+        /* Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-pattern"></div>
+        <div class="hero">
+            <h1>Juan Carlos Tovar Gómez</h1>
+            <p class="subtitle">Educational Technology Leader & Learning Systems Architect</p>
+            <p style="font-size: 1.2em; margin-top: 20px;">Head of Technological Development Department<br>FES Iztacala, UNAM</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <div class="profile-grid">
+                <div class="profile-image-container">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" alt="Professional Profile" class="profile-image">
+                </div>
+                <div class="profile-content">
+                    <p>
+                        As a Computer Systems Engineer and Systems Analyst, I currently serve as the Head of the Technological Development Department at FES Iztacala, a distinguished faculty of the National Autonomous University of Mexico (UNAM).
+                    </p>
+                    <p>
+                        My department's primary mission centers on the strategic implementation and management of the Faculty's Learning Management Systems (LMS). We are dedicated to continuous monitoring, maintenance, and performance analysis of these critical educational platforms, ensuring optimal delivery of distance education services.
+                    </p>
+                    <p>
+                        Beyond technical infrastructure, my work encompasses the transformative impact of technology on pedagogical methods and comprehensive training in Information and Communication Technologies (ICT). We actively monitor student and faculty engagement within distance education systems and analyze their integration with social networks, driving innovation in digital education delivery.
+                    </p>
+                    <p>
+                        With a unique blend of technical expertise and educational insight, stemming from my background in both Computer Systems Engineering and Biology, I bridge the gap between technology and academia, creating innovative solutions that enhance the learning experience for thousands of students.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="reveal">
+            <h2>Core Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Learning Management Systems</h3>
+                    <p>Implementation, administration, and optimization of advanced LMS platforms including Moodle, ensuring robust educational technology infrastructure.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Distance Education</h3>
+                    <p>Strategic development and management of comprehensive distance learning programs, monitoring student and faculty performance in virtual environments.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Educational Technology</h3>
+                    <p>Pioneering the integration of emerging technologies in teaching methodologies, transforming traditional education through innovative ICT solutions.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>System Development</h3>
+                    <p>Full-stack development expertise including database management (PocketBase, SQLite), automation workflows (n8n), and server administration (nginx, SSH).</p>
+                </div>
+                <div class="skill-card">
+                    <h3>ICT Training</h3>
+                    <p>Designing and delivering comprehensive training programs for faculty and staff in the effective use of information and communication technologies.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Digital Analytics</h3>
+                    <p>Performance analysis and data-driven decision making to optimize educational platforms and enhance user engagement in virtual learning environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Head of Technological Development Department</h3>
+                    <div class="timeline-date">June 2012 - Present</div>
+                    <p><strong>Facultad de Estudios Superiores Iztacala, UNAM</strong></p>
+                    <p>Leading the strategic implementation and management of the faculty's Learning Management Systems. Responsible for developing content for the Distance Education Coordination, monitoring system performance, and driving technological innovation in educational delivery.</p>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Oversee implementation and maintenance of institutional LMS platforms</li>
+                        <li>Develop and execute ICT training programs for faculty and staff</li>
+                        <li>Monitor and analyze performance metrics of distance education systems</li>
+                        <li>Manage student information systems and educational databases</li>
+                        <li>Coordinate integration of emerging technologies in teaching methodologies</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Head of Department & Development Manager</h3>
+                    <div class="timeline-date">June 2006 - June 2012</div>
+                    <p><strong>Cuatro Colibri SA de CV</strong></p>
+                    <p>Managed development projects and led technical teams in delivering innovative software solutions. Gained extensive experience in systems analysis, project management, and client relations in the private sector.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <h2>Education & Academic Background</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Bachelor's Degree in Computer Systems Engineering</h3>
+                    <div class="timeline-date">Completed</div>
+                    <p>Specialized training in systems architecture, software development, database management, and network administration.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Bachelor's Degree in Biology (Licenciatura en Biología)</h3>
+                    <div class="timeline-date">1992 - 1998</div>
+                    <p><strong>Universidad Nacional Autónoma de México (UNAM)</strong></p>
+                    <p>Comprehensive education in biological sciences, providing a unique interdisciplinary perspective that enriches my approach to educational technology and systems thinking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2>Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Institutional Email</h3>
+                    <p><a href="mailto:jctovar@iztacala.unam.mx">jctovar@iztacala.unam.mx</a></p>
+                    <p><a href="mailto:jctovar@ired.unam.mx">jctovar@ired.unam.mx</a></p>
+                    <p><a href="mailto:jctovar@unam.mx">jctovar@unam.mx</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Professional Email</h3>
+                    <p><a href="mailto:jctovar@gmail.com">jctovar@gmail.com</a></p>
+                    <p><a href="mailto:jctovar@cuatrocolibri.com.mx">jctovar@cuatrocolibri.com.mx</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Office Location</h3>
+                    <p>Av. de los Barrios 1<br>
+                    Los Reyes Ixtacala<br>
+                    Tlalnepantla de Baz, Mexico</p>
+                    <p>Phone: 55·5623·1344</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday<br>
+                    9:00 AM - 6:00 PM</p>
+                    <p style="margin-top: 15px;">Email for appointments or inquiries</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>Juan Carlos Tovar Gómez</strong></p>
+        <p>Head of Technological Development Department</p>
+        <p>Facultad de Estudios Superiores Iztacala, UNAM</p>
+        <p style="margin-top: 20px;">Made in Mexico <span class="decorative-icon">❖</span> Universidad Nacional Autónoma de México (UNAM)</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">All rights reserved © 2025</p>
+        <p style="margin-top: 15px;"><a href="https://www.unam.mx" target="_blank">UNAM</a> <span class="decorative-icon">•</span> <a href="https://www.iztacala.unam.mx" target="_blank">FES Iztacala</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Reveal animation on scroll
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', reveal);
+        
+        // Initial reveal check
+        reveal();
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            hero.style.transform = 'translateY(' + (scrolled * 0.5) + 'px)';
+        });
+    </script>
+</body>
+</html>
