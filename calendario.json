@@ -1,0 +1,148 @@
+{
+  "nombre": "Calendario Escolar FES Iztacala UNAM 2026",
+  "año": 2026,
+  "institucion": "Facultad de Estudios Superiores Iztacala",
+  "universidad": "Universidad Nacional Autónoma de México",
+  "generado": "2025",
+  "periodos": [
+    {
+      "id": 1,
+      "nombre": "Primer Semestre",
+      "semestre": "2026-1",
+      "fechaInicio": "2025-08-10",
+      "fechaFin": "2025-12-13",
+      "tipo": "semestre",
+      "eventos": [
+        {
+          "nombre": "Inicio de clases",
+          "fecha": "2025-08-10",
+          "tipo": "inicio",
+          "descripcion": "Inicio de actividades académicas del semestre"
+        },
+        {
+          "nombre": "Primera evaluación",
+          "fecha": "2025-10-13",
+          "tipo": "evaluacion",
+          "descripcion": "Período de evaluación parcial"
+        },
+        {
+          "nombre": "Período de exámenes ordinarios",
+          "fechaInicio": "2025-11-24",
+          "fechaFin": "2025-12-13",
+          "tipo": "examenes",
+          "descripcion": "Exámenes ordinarios del primer semestre"
+        },
+        {
+          "nombre": "Fin de clases",
+          "fecha": "2025-12-13",
+          "tipo": "fin",
+          "descripcion": "Término de actividades académicas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Segundo Semestre",
+      "semestre": "2026-2",
+      "fechaInicio": "2026-01-12",
+      "fechaFin": "2026-05-16",
+      "tipo": "semestre",
+      "eventos": [
+        {
+          "nombre": "Inicio de clases",
+          "fecha": "2026-01-12",
+          "tipo": "inicio",
+          "descripcion": "Inicio de actividades académicas del semestre"
+        },
+        {
+          "nombre": "Primera evaluación",
+          "fecha": "2026-03-09",
+          "tipo": "evaluacion",
+          "descripcion": "Período de evaluación parcial"
+        },
+        {
+          "nombre": "Período de exámenes ordinarios",
+          "fechaInicio": "2026-04-27",
+          "fechaFin": "2026-05-16",
+          "tipo": "examenes",
+          "descripcion": "Exámenes ordinarios del segundo semestre"
+        },
+        {
+          "nombre": "Fin de clases",
+          "fecha": "2026-05-16",
+          "tipo": "fin",
+          "descripcion": "Término de actividades académicas"
+        }
+      ]
+    }
+  ],
+  "diasInhábiles": [
+    {
+      "nombre": "Día de Muertos",
+      "fecha": "2025-11-01",
+      "descripcion": "Conmemoración de Día de Muertos"
+    },
+    {
+      "nombre": "Día de Muertos",
+      "fecha": "2025-11-02",
+      "descripcion": "Conmemoración de Día de Muertos"
+    },
+    {
+      "nombre": "Aniversario de la Revolución Mexicana",
+      "fecha": "2025-11-17",
+      "descripcion": "Conmemoración de la Revolución Mexicana (observancia)"
+    },
+    {
+      "nombre": "Receso de Navidad",
+      "fechaInicio": "2025-12-15",
+      "fechaFin": "2026-01-11",
+      "descripcion": "Período de receso escolar de Navidad"
+    },
+    {
+      "nombre": "Día de Año Nuevo",
+      "fecha": "2026-01-01",
+      "descripcion": "Año nuevo"
+    },
+    {
+      "nombre": "Día de Reyes",
+      "fecha": "2026-01-06",
+      "descripcion": "Festividad de Reyes"
+    },
+    {
+      "nombre": "Aniversario de la Constitución",
+      "fecha": "2026-02-05",
+      "descripcion": "Conmemoración de la Constitución Mexicana"
+    },
+    {
+      "nombre": "Receso de Semana Santa",
+      "fechaInicio": "2026-03-30",
+      "fechaFin": "2026-04-07",
+      "descripcion": "Período de receso escolar de Semana Santa"
+    },
+    {
+      "nombre": "Día del Trabajo",
+      "fecha": "2026-05-01",
+      "descripcion": "Festividad del Día del Trabajo"
+    }
+  ],
+  "opcionesEvaluación": [
+    {
+      "nombre": "Evaluación Ordinaria",
+      "descripcion": "Período regular de exámenes al final de cada semestre"
+    },
+    {
+      "nombre": "Evaluación Extraordinaria",
+      "descripcion": "Período para estudiantes con evaluación no aprobatoria"
+    },
+    {
+      "nombre": "Evaluación Complementaria",
+      "descripcion": "Período adicional según normatividad universitaria"
+    }
+  ],
+  "notas": [
+    "Las fechas pueden estar sujetas a cambios según disposiciones de la Universidad",
+    "Consultar el sitio web oficial de FES Iztacala para actualizaciones",
+    "Diferentes programas académicos pueden tener calendarios específicos",
+    "Los períodos de evaluación pueden variar por modalidad (presencial, en línea, híbrida)"
+  ]
+}
