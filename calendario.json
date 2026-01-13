@@ -1,9 +1,19 @@
 {
   "nombre": "Calendario Escolar FES Iztacala UNAM 2026",
+  "programa": "Licenciatura en Psicología SUAyED",
   "año": 2026,
   "institucion": "Facultad de Estudios Superiores Iztacala",
   "universidad": "Universidad Nacional Autónoma de México",
-  "generado": "2025",
+  "generado": "2025-01-13",
+  "contacto": {
+    "departamento": "Departamento de Asuntos Estudiantiles",
+    "telefono": "55-5623-1119",
+    "email": "asuntosestudiantiles.suayediztacala@unam.mx",
+    "emailPlataforma": "plataformaseducativas.suayediztacala@unam.mx",
+    "telefonoPlataforma": "55-5623-1300",
+    "sitioWeb": "suayed.iztacala.unam.mx",
+    "primerIngreso": "https://www.iztacala.unam.mx/nuevo_ingreso/?page_id=2099"
+  },
   "periodos": [
     {
       "id": 1,
@@ -44,105 +54,385 @@
       "id": 2,
       "nombre": "Segundo Semestre",
       "semestre": "2026-2",
-      "fechaInicio": "2026-01-12",
-      "fechaFin": "2026-05-16",
+      "fechaInicio": "2026-02-03",
+      "fechaFin": "2026-05-29",
       "tipo": "semestre",
       "eventos": [
         {
-          "nombre": "Inicio de clases",
-          "fecha": "2026-01-12",
+          "nombre": "Corrección de calificaciones ordinarias y extraordinario largo 2026-1",
+          "fechaInicio": "2026-01-13",
+          "fechaFin": "2026-03-13",
+          "tipo": "administrativo",
+          "sistema": "SIAE",
+          "descripcion": "Período para corrección de calificaciones del semestre anterior. Consultar en SIAE",
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Corrección de calificaciones extraordinarios cortos 2026-1",
+          "fechaInicio": "2026-01-21",
+          "fechaFin": "2026-03-24",
+          "tipo": "administrativo",
+          "sistema": "SIAE",
+          "descripcion": "Período para corrección de calificaciones de extraordinarios cortos. Consultar en SIAE",
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Consulta cita personalizada para reinscripción",
+          "fechaInicio": "2026-01-16",
+          "fechaFin": "2026-01-18",
+          "tipo": "consulta",
+          "sistema": "SIA",
+          "descripcion": "Consulta obligatoria para obtener fecha y hora de reinscripción. A través del SIA",
+          "noAplicaNuevoIngreso": true,
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Reinscripción de módulos ordinarios",
+          "fechaInicio": "2026-01-22",
+          "fechaFin": "2026-01-23",
+          "tipo": "inscripcion",
+          "sistema": "SIA",
+          "descripcion": "Reinscripción según cita personalizada obtenida. No aplica para Nuevo Ingreso. A través del SIA",
+          "noAplicaNuevoIngreso": true,
+          "importante": "Verificar seriación de módulos. Módulos seriados no se pueden registrar en el mismo ciclo escolar",
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Consulta cita personalizada para ajustes",
+          "fechaInicio": "2026-01-24",
+          "fechaFin": "2026-01-26",
+          "tipo": "consulta",
+          "sistema": "SIA",
+          "descripcion": "Consulta para obtener fecha y hora de ajustes de inscripción. A través del SIA",
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Altas, Bajas y Cambios (Ajustes)",
+          "fechaInicio": "2026-01-29",
+          "fechaFin": "2026-01-30",
+          "tipo": "ajuste",
+          "sistema": "SIA",
+          "descripcion": "Última oportunidad para inscribir módulos de forma ordinaria. Plan 2005: alumnos de 1° a 9°. Plan 2023: 2° semestre y recursadores de 1°. A través del SIA",
+          "importante": "Última oportunidad para inscribir módulos de forma ordinaria",
+          "aplica": ["Plan 2005 (1° a 9° semestre)", "Plan 2023 (2° semestre y recursadores de 1°)"]
+        },
+        {
+          "nombre": "Inscripción de nuevo ingreso 2026-2",
+          "fechaInicio": "2026-01-26",
+          "fechaFin": "2026-01-29",
+          "tipo": "inscripcion",
+          "sistema": "Página primer ingreso",
+          "descripcion": "Inscripción para alumnos de nuevo ingreso conforme a las indicaciones de la página de primer ingreso",
+          "url": "https://www.iztacala.unam.mx/nuevo_ingreso/?page_id=2099",
+          "soloNuevoIngreso": true
+        },
+        {
+          "nombre": "1ra. Solicitud para más de 2 extraordinarios",
+          "fecha": "2026-01-22",
+          "tipo": "solicitud",
+          "sistema": "Página de la carrera",
+          "descripcion": "Solicitud para inscribir de 3 a 6 extraordinarios (cortos o largos) durante el semestre. A través de la página de la carrera",
+          "importante": "Sin esta solicitud solo se pueden inscribir 2 módulos extraordinarios en todo el semestre",
+          "aplica": ["Plan 2005", "Plan 2023"],
+          "notaAdicional": "Los extraordinarios largos aplican dentro de la sumatoria de extraordinarios cortos"
+        },
+        {
+          "nombre": "Inicio de semestre (Acceso a plataforma educativa)",
+          "fecha": "2026-02-03",
           "tipo": "inicio",
-          "descripcion": "Inicio de actividades académicas del semestre"
+          "descripcion": "Inicio de actividades académicas. Acceso a plataforma educativa (Aulas Virtuales)",
+          "aplica": ["Plan 2005", "Plan 2023"]
         },
         {
-          "nombre": "Primera evaluación",
-          "fecha": "2026-03-09",
-          "tipo": "evaluacion",
-          "descripcion": "Período de evaluación parcial"
+          "nombre": "Inscripción a extraordinarios largos",
+          "fechaInicio": "2026-02-03",
+          "fechaFin": "2026-02-05",
+          "tipo": "inscripcion",
+          "sistema": "SIA",
+          "descripcion": "Inscripción de módulos a cursar de forma extraordinaria durante el semestre. Sujeto a disponibilidad de cupo. A través del SIA",
+          "requisito": "Solo después de haber agotado las 2 oportunidades de forma ordinaria",
+          "importante": "Si el sistema no refleja grupos, profesores o módulos, es porque NO hubo lugares disponibles",
+          "aplica": ["Plan 2005", "Plan 2023"]
         },
         {
-          "nombre": "Período de exámenes ordinarios",
-          "fechaInicio": "2026-04-27",
-          "fechaFin": "2026-05-16",
-          "tipo": "examenes",
-          "descripcion": "Exámenes ordinarios del segundo semestre"
+          "nombre": "Baja de módulos ordinarios",
+          "fechaInicio": "2026-02-19",
+          "fechaFin": "2026-02-20",
+          "tipo": "baja",
+          "sistema": "SIA",
+          "descripcion": "Baja de uno o todos los módulos inscritos sin afectar historial académico. No aplica para nuevo ingreso. A través del SIA",
+          "noAplicaNuevoIngreso": true,
+          "aplica": ["Plan 2005", "Plan 2023"]
         },
         {
-          "nombre": "Fin de clases",
-          "fecha": "2026-05-16",
+          "nombre": "Solicitud Programa de Profundización",
+          "fechaInicio": "2026-04-09",
+          "fechaFin": "2026-04-10",
+          "tipo": "solicitud",
+          "sistema": "Página de la carrera",
+          "descripcion": "Alumnos que inscribirán módulos de 5° semestre plan 2005. A través de la página de la carrera",
+          "aplica": ["Plan 2005 (4° semestre)"],
+          "notaAdicional": "Para alumnos cursando 4° semestre o que acreditaron todos los módulos de 4° sin campo asignado"
+        },
+        {
+          "nombre": "Carta de asignación de campo de profundización",
+          "fecha": "2026-06-16",
+          "tipo": "administrativo",
+          "medio": "Correo institucional",
+          "descripcion": "Entrega de carta de asignación del campo de profundización vía correo institucional",
+          "aplica": ["Plan 2005"],
+          "importante": "Determinará los módulos a cursar de 5° a 9° semestre"
+        },
+        {
+          "nombre": "2da. Solicitud para más de 2 extraordinarios",
+          "fechaInicio": "2026-05-12",
+          "fechaFin": "2026-05-13",
+          "tipo": "solicitud",
+          "sistema": "Página de la carrera",
+          "descripcion": "Solicitud SOLO para extraordinarios cortos. Solo aplica si NO se registró la 1ra solicitud. A través de la página de la carrera",
+          "soloExtraordinariosCortos": true,
+          "condicion": "Solo si NO se registró la 1ra solicitud",
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Fin de semestre",
+          "fecha": "2026-05-29",
           "tipo": "fin",
-          "descripcion": "Término de actividades académicas"
+          "descripcion": "Término de actividades académicas del semestre"
+        },
+        {
+          "nombre": "Último día trámite de credencial",
+          "fecha": "2026-05-29",
+          "tipo": "administrativo",
+          "lugar": "Unidad de Servicios Escolares",
+          "descripcion": "Último día para trámite de reposición y renovación de credencial",
+          "requisito": "Presentar tira de materias con módulos inscritos de forma ordinaria y fecha del día del trámite"
+        },
+        {
+          "nombre": "Exámenes finales",
+          "fechaInicio": "2026-06-01",
+          "fechaFin": "2026-06-12",
+          "tipo": "examenes",
+          "medio": "Plataforma educativa",
+          "descripcion": "Período de exámenes finales. A través de la plataforma educativa"
+        },
+        {
+          "nombre": "Registro de calificaciones finales",
+          "fechaInicio": "2026-06-08",
+          "fechaFin": "2026-06-19",
+          "tipo": "calificaciones",
+          "sistema": "SIAE",
+          "descripcion": "Período de registro de calificaciones finales de ordinario y extraordinario largo por parte de docentes. Alumnos pueden consultarlo en SIAE",
+          "tipoCalificacion": ["Ordinario", "Extraordinario Largo"]
+        },
+        {
+          "nombre": "Inscripción a extraordinarios cortos",
+          "fecha": "2026-06-19",
+          "fechaInicio": "2026-06-19",
+          "fechaFin": "2026-06-22",
+          "tipo": "inscripcion",
+          "sistema": "SIA",
+          "descripcion": "Inscripción de módulos para extraordinarios cortos. A través del SIA",
+          "aplica": ["Plan 2005", "Plan 2023"]
+        },
+        {
+          "nombre": "Aplicación de exámenes extraordinarios cortos",
+          "fechaInicio": "2026-06-24",
+          "fechaFin": "2026-07-02",
+          "tipo": "examenes",
+          "medio": "Plataforma educativa",
+          "descripcion": "Período de exámenes extraordinarios cortos. A través de la plataforma educativa",
+          "aplica": ["Plan 2005", "Plan 2023"],
+          "duracion": "Aproximadamente una semana para acreditar todo el módulo"
+        },
+        {
+          "nombre": "Registro de calificaciones extraordinario corto",
+          "periodos": [
+            {
+              "fechaInicio": "2026-06-25",
+              "fechaFin": "2026-07-03"
+            },
+            {
+              "fechaInicio": "2026-07-27",
+              "fechaFin": "2026-08-02"
+            }
+          ],
+          "tipo": "calificaciones",
+          "sistema": "SIAE",
+          "descripcion": "Período de registro de calificaciones de extraordinario corto por parte de docentes. Alumnos pueden consultarlo en SIAE",
+          "tipoCalificacion": ["Extraordinario Corto"]
+        },
+        {
+          "nombre": "Vacaciones administrativas",
+          "fechaInicio": "2026-07-06",
+          "fechaFin": "2026-07-24",
+          "tipo": "vacaciones",
+          "descripcion": "Período de vacaciones administrativas"
         }
       ]
     }
   ],
-  "diasInhábiles": [
+  "diasInhabiles": [
     {
       "nombre": "Día de Muertos",
       "fecha": "2025-11-01",
+      "semestre": "2026-1",
       "descripcion": "Conmemoración de Día de Muertos"
     },
     {
       "nombre": "Día de Muertos",
       "fecha": "2025-11-02",
+      "semestre": "2026-1",
       "descripcion": "Conmemoración de Día de Muertos"
     },
     {
       "nombre": "Aniversario de la Revolución Mexicana",
       "fecha": "2025-11-17",
+      "semestre": "2026-1",
       "descripcion": "Conmemoración de la Revolución Mexicana (observancia)"
     },
     {
       "nombre": "Receso de Navidad",
       "fechaInicio": "2025-12-15",
       "fechaFin": "2026-01-11",
+      "semestre": "Intersemestral",
       "descripcion": "Período de receso escolar de Navidad"
     },
     {
       "nombre": "Día de Año Nuevo",
       "fecha": "2026-01-01",
+      "semestre": "Intersemestral",
       "descripcion": "Año nuevo"
     },
     {
       "nombre": "Día de Reyes",
       "fecha": "2026-01-06",
+      "semestre": "Intersemestral",
       "descripcion": "Festividad de Reyes"
+    },
+    {
+      "nombre": "Día de la Candelaria",
+      "fecha": "2026-02-02",
+      "semestre": "2026-2",
+      "descripcion": "Día de la Candelaria"
     },
     {
       "nombre": "Aniversario de la Constitución",
       "fecha": "2026-02-05",
+      "semestre": "2026-2",
       "descripcion": "Conmemoración de la Constitución Mexicana"
+    },
+    {
+      "nombre": "Natalicio de Benito Juárez",
+      "fecha": "2026-03-16",
+      "semestre": "2026-2",
+      "descripcion": "Conmemoración del natalicio de Benito Juárez"
     },
     {
       "nombre": "Receso de Semana Santa",
       "fechaInicio": "2026-03-30",
-      "fechaFin": "2026-04-07",
+      "fechaFin": "2026-04-03",
+      "semestre": "2026-2",
       "descripcion": "Período de receso escolar de Semana Santa"
     },
     {
       "nombre": "Día del Trabajo",
       "fecha": "2026-05-01",
+      "semestre": "2026-2",
       "descripcion": "Festividad del Día del Trabajo"
+    },
+    {
+      "nombre": "Batalla de Puebla",
+      "fecha": "2026-05-10",
+      "semestre": "2026-2",
+      "descripcion": "Aniversario de la Batalla de Puebla (5 de Mayo - observancia)"
+    },
+    {
+      "nombre": "Día del Maestro",
+      "fecha": "2026-05-15",
+      "semestre": "2026-2",
+      "descripcion": "Día del Maestro"
     }
   ],
-  "opcionesEvaluación": [
+  "planesEstudio": [
+    {
+      "nombre": "Plan 2005",
+      "semestres": 9,
+      "campoProfundizacion": {
+        "solicitud": "4° semestre",
+        "aplicacion": "5° a 9° semestre",
+        "descripcion": "Campo fijo de profundización que determina los módulos a cursar"
+      }
+    },
+    {
+      "nombre": "Plan 2023",
+      "descripcion": "Plan de estudios actualizado"
+    }
+  ],
+  "tiposExtraordinarios": {
+    "largo": {
+      "nombre": "Extraordinario Largo",
+      "inscripcion": "Inicio del semestre",
+      "duracion": "Todo el semestre",
+      "descripcion": "Se cursa el módulo durante todo el semestre de forma extraordinaria",
+      "requisito": "Haber agotado las 2 oportunidades de forma ordinaria"
+    },
+    "corto": {
+      "nombre": "Extraordinario Corto",
+      "inscripcion": "Fin del semestre",
+      "duracion": "Aproximadamente una semana",
+      "descripcion": "Se debe acreditar todo el módulo en aproximadamente una semana al final del ciclo escolar"
+    }
+  },
+  "limitesExtraordinarios": {
+    "sinSolicitud": 2,
+    "conSolicitud": 6,
+    "nota": "Los extraordinarios largos aplican dentro de la sumatoria de los extraordinarios cortos"
+  },
+  "opcionesEvaluacion": [
     {
       "nombre": "Evaluación Ordinaria",
       "descripcion": "Período regular de exámenes al final de cada semestre"
     },
     {
-      "nombre": "Evaluación Extraordinaria",
-      "descripcion": "Período para estudiantes con evaluación no aprobatoria"
+      "nombre": "Evaluación Extraordinaria Larga",
+      "descripcion": "Módulo cursado de forma extraordinaria durante todo el semestre"
     },
     {
-      "nombre": "Evaluación Complementaria",
-      "descripcion": "Período adicional según normatividad universitaria"
+      "nombre": "Evaluación Extraordinaria Corta",
+      "descripcion": "Examen extraordinario al finalizar el semestre (aproximadamente una semana)"
     }
   ],
-  "notas": [
-    "Las fechas pueden estar sujetas a cambios según disposiciones de la Universidad",
-    "Consultar el sitio web oficial de FES Iztacala para actualizaciones",
-    "Diferentes programas académicos pueden tener calendarios específicos",
-    "Los períodos de evaluación pueden variar por modalidad (presencial, en línea, híbrida)"
-  ]
+  "sistemasSIA": {
+    "SIA": {
+      "nombre": "Sistema de Inscripciones Académicas",
+      "uso": "Reinscripción, ajustes, inscripción a extraordinarios"
+    },
+    "SIAE": {
+      "nombre": "Sistema Integral de Administración Escolar",
+      "uso": "Consulta de calificaciones y corrección de calificaciones"
+    }
+  },
+  "notasImportantes": [
+    "Las fechas y horarios establecidos son inalterables, no habrá prórrogas ni trámites extemporáneos",
+    "Consultar continuamente el portal oficial suayed.iztacala.unam.mx para comunicados previos a cada trámite",
+    "Verificar la seriación de módulos en el plan de estudios",
+    "Módulos seriados no se pueden registrar dentro del mismo ciclo escolar",
+    "Los trámites son centralizados por la Unidad de Administración Escolar de FES Iztacala y la DGAE",
+    "En la página oficial se encuentran disponibles infografías y videotutoriales de cada trámite",
+    "Si no se realiza la reinscripción en el horario señalado, estar pendiente del período de Ajustes",
+    "Para extraordinarios largos: si el sistema no refleja grupos o módulos, no hubo lugares disponibles",
+    "La consulta de cita personalizada es obligatoria para realizar la reinscripción"
+  ],
+  "recursos": {
+    "calendarioPDF": "Disponible en la página oficial de la licenciatura",
+    "infografias": "Disponibles en: Menú > Alumnos > Trámites institucionales",
+    "videotutoriales": "Disponibles en: Menú > Alumnos > Trámites institucionales"
+  },
+  "metadatos": {
+    "version": "1.0",
+    "fechaCreacion": "2025-01-13",
+    "fuente": "Calendario Escolar 2026-2 - Psicología SUAyED Iztacala",
+    "ultimaActualizacion": "2025-01-13"
+  }
 }
